@@ -1,7 +1,7 @@
-const expressTest = (req, res) => {
+const version = (req, res) => {
     res.json({ 
       currentVersion: 2
     })
   }
   
-module.exports = { expressTest }
+module.exports = { version }
