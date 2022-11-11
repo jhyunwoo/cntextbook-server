@@ -1,6 +1,6 @@
 const expressTest = (req, res) => {
     res.json({ 
-      currentVersion: "v2"
+      currentVersion: 2
     })
   }
   
