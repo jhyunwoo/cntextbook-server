@@ -15,18 +15,18 @@ const mainPage = (req, res) => {
               fileName:"ERC4",
               title: "영어독해연습 Chapter 4",
             },
-            {
-              fileName:"ERC10",
-              title: "영어독해연습 Chapter 10",
-            },
-            {
-              fileName:"ERC11",
-              title: "영어독해연습 Chapter 11",
-            },
-            {
-              fileName:"ERC12",
-              title: "영어독해연습 Chapter 12",
-            },
+            // {
+            //   fileName:"ERC10",
+            //   title: "영어독해연습 Chapter 10",
+            // },
+            // {
+            //   fileName:"ERC11",
+            //   title: "영어독해연습 Chapter 11",
+            // },
+            // {
+            //   fileName:"ERC12",
+            //   title: "영어독해연습 Chapter 12",
+            // },
           ]
         },
       ]
