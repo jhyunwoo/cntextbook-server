@@ -30,6 +30,7 @@ const app = express()
 app.use(express.json())
 
 app.get('/y2/', version)
+app.get('/y1/', version)
 app.get('/y2/mainpage', mainPage)
 app.get('/y2/erc2', Chapter2)
 app.get('/y2/erc2/2-1', erc2_1)
