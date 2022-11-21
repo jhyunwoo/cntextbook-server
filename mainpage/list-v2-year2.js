@@ -1,4 +1,4 @@
-const mainPage = (req, res) => {
+const year2Chapter = (req, res) => {
   res.json([
     {
       test: "2022 고2 2학기 1회고사",
@@ -31,4 +31,4 @@ const mainPage = (req, res) => {
   ]);
 };
 
-module.exports = { mainPage };
+module.exports = { year2Chapter };
