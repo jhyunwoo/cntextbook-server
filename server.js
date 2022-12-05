@@ -46,6 +46,16 @@ const { erc11_6 } = require('./ERC11/erc11_6');
 const { erc11_7 } = require('./ERC11/erc11_7');
 const { erc11_8 } = require('./ERC11/erc11_8');
 const { erc11_9 } = require('./ERC11/erc11_9');
+const { Chapter12 } = require('./ERC12/chapter12');
+const { erc12_1 } = require('./ERC12/erc12_1');
+const { erc12_2 } = require('./ERC12/erc12_2');
+const { erc12_3 } = require('./ERC12/erc12_3');
+const { erc12_4 } = require('./ERC12/erc12_4');
+const { erc12_5 } = require('./ERC12/erc12_5');
+const { erc12_6 } = require('./ERC12/erc12_6');
+const { erc12_7 } = require('./ERC12/erc12_7');
+const { erc12_8 } = require('./ERC12/erc12_8');
+const { erc12_9 } = require('./ERC12/erc12_9');
 
 const app = express();
 app.use(express.json());
@@ -103,6 +113,18 @@ app.get('/v2/y2/erc11/enr11_6', erc11_6);
 app.get('/v2/y2/erc11/enr11_7', erc11_7);
 app.get('/v2/y2/erc11/enr11_8', erc11_8);
 app.get('/v2/y2/erc11/enr11_9', erc11_9);
+
+// Year 2 Chapter 12
+app.get('/v2/y2/erc12', Chapter12);
+app.get('/v2/y2/erc12/enr12_1', erc12_1);
+app.get('/v2/y2/erc12/enr12_2', erc12_2);
+app.get('/v2/y2/erc12/enr12_3', erc12_3);
+app.get('/v2/y2/erc12/enr12_4', erc12_4);
+app.get('/v2/y2/erc12/enr12_5', erc12_5);
+app.get('/v2/y2/erc12/enr12_6', erc12_6);
+app.get('/v2/y2/erc12/enr12_7', erc12_7);
+app.get('/v2/y2/erc12/enr12_8', erc12_8);
+app.get('/v2/y2/erc12/enr12_9', erc12_9);
 
 const server = http.createServer(app);
 
