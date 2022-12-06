@@ -20,7 +20,7 @@ const year2Chapter = (req, res) => {
       },
       {
         fileName: 'ERC12',
-        title: '영어독해연습 Chapter 12',
+        title: '영어독해 Chapter 12',
       },
     ],
   });
