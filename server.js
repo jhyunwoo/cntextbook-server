@@ -56,6 +56,37 @@ const { erc12_6 } = require('./ERC12/erc12_6');
 const { erc12_7 } = require('./ERC12/erc12_7');
 const { erc12_8 } = require('./ERC12/erc12_8');
 const { erc12_9 } = require('./ERC12/erc12_9');
+const { Unit14 } = require('./unit14/unit14');
+const { u14p90 } = require('./unit14/u14p90');
+const { u14p92 } = require('./unit14/u14p92');
+const { u14p93 } = require('./unit14/u14p93');
+const { Unit15 } = require('./unit15/unit15');
+const { u15p96 } = require('./unit15/u15p96');
+const { u15p100 } = require('./unit15/u15p100');
+const { u15p101 } = require('./unit15/u15p101');
+const { Unit16 } = require('./unit16/unit16');
+const { u16p104 } = require('./unit16/u16p104');
+const { u16p106 } = require('./unit16/u16p106');
+const { Unit19 } = require('./unit19/unit19');
+const { u19p124 } = require('./unit19/u19p124');
+const { u19p126 } = require('./unit19/u19p126');
+const { u19p127 } = require('./unit19/u19p127');
+const { Unit20 } = require('./unit20/unit20');
+const { u20p130 } = require('./unit20/u20p130');
+const { u20p131 } = require('./unit20/u20p131');
+const { u20p133 } = require('./unit20/u20p133');
+const { Unit21 } = require('./unit21/unit21');
+const { u21p136 } = require('./unit21/u21p136');
+const { u21p137 } = require('./unit21/u21p137');
+const { u21p139 } = require('./unit21/u21p139');
+const { Unit22 } = require('./unit22/unit22');
+const { u22p142 } = require('./unit22/u22p142');
+const { u22p143 } = require('./unit22/u22p143');
+const { u22p144 } = require('./unit22/u22p144');
+const { Unit23 } = require('./unit23/unit23');
+const { u23p149 } = require('./unit23/u23p149');
+const { u23p150 } = require('./unit23/u23p150');
+const { u23p151 } = require('./unit23/u23p151');
 
 const app = express();
 app.use(express.json());
@@ -125,6 +156,53 @@ app.get('/v2/y2/erc12/enr12_6', erc12_6);
 app.get('/v2/y2/erc12/enr12_7', erc12_7);
 app.get('/v2/y2/erc12/enr12_8', erc12_8);
 app.get('/v2/y2/erc12/enr12_9', erc12_9);
+
+// Year 1 Unit 14
+app.get('/v2/y1/unit14', Unit14);
+app.get('/v2/y1/unit14/u14p90', u14p90);
+app.get('/v2/y1/unit14/u14p92', u14p92);
+app.get('/v2/y1/unit14/u14p93', u14p93);
+
+// Year 1 Unit 15
+app.get('/v2/y1/unit15', Unit15);
+app.get('/v2/y1/unit15/u15p96', u15p96);
+app.get('/v2/y1/unit15/u15p100', u15p100);
+app.get('/v2/y1/unit15/u15p101', u15p101);
+
+// Year 1 Unit 16
+app.get('/v2/y1/unit16', Unit16);
+app.get('/v2/y1/unit16/u16p104', u16p104);
+app.get('/v2/y1/unit16/u16p106', u16p106);
+
+// Year 1 Unit 19
+app.get('/v2/y1/unit19', Unit19);
+app.get('/v2/y1/unit19/u19p124', u19p124);
+app.get('/v2/y1/unit19/u19p126', u19p126);
+app.get('/v2/y1/unit19/u19p127', u19p127);
+
+// Year 1 Unit 20
+app.get('/v2/y1/unit20', Unit20);
+app.get('/v2/y1/unit20/u20p130', u20p130);
+app.get('/v2/y1/unit20/u20p131', u20p131);
+app.get('/v2/y1/unit20/u20p133', u20p133);
+
+// Year 1 Unit 21
+app.get('/v2/y1/unit21', Unit21);
+app.get('/v2/y1/unit21/u21p136', u21p136);
+app.get('/v2/y1/unit21/u21p137', u21p137);
+app.get('/v2/y1/unit21/u21p139', u21p139);
+
+// Year 1 Unit 22
+app.get('/v2/y1/unit22', Unit22);
+app.get('/v2/y1/unit22/u22p142', u22p142);
+app.get('/v2/y1/unit22/u22p143', u22p143);
+app.get('/v2/y1/unit22/u22p144', u22p144);
+
+// Year 1 Unit 23
+app.get('/v2/y1/unit23', Unit23);
+app.get('/v2/y1/unit23/u23p149', u23p149);
+app.get('/v2/y1/unit23/u23p150', u23p150);
+app.get('/v2/y1/unit23/u23p151', u23p151);
 
 const server = http.createServer(app);
 
