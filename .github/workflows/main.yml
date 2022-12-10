@@ -12,9 +12,6 @@ jobs:
     steps:
       - name: Deploy
         uses: appleboy/ssh-action@master
-        uses: actions/setup-node@v3
-           with:
-           node-version: 16
         with:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
@@ -23,7 +20,9 @@ jobs:
           script: |
             cd cntextbook-server/
             git pull https://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@github.com/jhyunwoo/cntextbook-server.git
-            npm i -g pm2
+            export NVM_DIR=~/.nvm
+            source ~/.nvm/nvm.sh
+            npm install
             pm2 restart 0
             
       - name: send custom message with args
