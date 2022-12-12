@@ -26,6 +26,10 @@ const year2Chapter = (req, res) => {
         fileName: 'y2nov',
         title: '2022년 고2 11월 학평',
       },
+      {
+        fileName: 'y2textbook',
+        title: '교과서',
+      },
     ],
   });
 };
