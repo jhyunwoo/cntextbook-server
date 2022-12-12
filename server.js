@@ -98,6 +98,9 @@ const { q34 } = require('./y2nov/q34');
 const { q38 } = require('./y2nov/q38');
 const { q41 } = require('./y2nov/q41');
 
+const { y2textbook } = require('./y2textbook/y2textbook');
+const { y2textbookc4 } = require('./y2textbook/y2textbookc4');
+
 const app = express();
 app.use(express.json());
 
@@ -177,6 +180,10 @@ app.get('/v2/y2/y2nov/q31', q31);
 app.get('/v2/y2/y2nov/q34', q34);
 app.get('/v2/y2/y2nov/q38', q38);
 app.get('/v2/y2/y2nov/q41', q41);
+
+// Year 2 Textbook
+app.get('/v2/y2/y2textbook', y2textbook);
+app.get('/v2/y2/y2textbook/y2textbookc4', y2textbookc4);
 
 // Year 1 Unit 14
 app.get('/v2/y1/unit14', Unit14);
