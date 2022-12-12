@@ -19,7 +19,7 @@ const y2textbookc4 = (req, res) => {
     {
       title: 'Lesson 4',
       en: 'Butterflies, on the other hand, were considered "summer birds," and it was commonly believed that they just fell from the sky in warm weather and vanished in the fall. ',
-      ko: '반면, 나비는 ‘여름 새 로’ 여겨졌으며, 따뜻한 날씨에 하늘에서 떨어졌다가 가을이면 사라진다고 흔히 믿어졌다.',
+      ko: '반면, 나비는 ‘여름 새’로 여겨졌으며, 따뜻한 날씨에 하늘에서 떨어졌다가 가을이면 사라진다고 흔히 믿어졌다.',
     },
     {
       title: 'Lesson 4',
