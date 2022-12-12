@@ -88,6 +88,16 @@ const { u23p149 } = require('./unit23/u23p149');
 const { u23p150 } = require('./unit23/u23p150');
 const { u23p151 } = require('./unit23/u23p151');
 
+const { y2nov } = require('./y2nov/y2nov');
+const { q20 } = require('./y2nov/q20');
+const { q24 } = require('./y2nov/q24');
+const { q29 } = require('./y2nov/q29');
+const { q30 } = require('./y2nov/q30');
+const { q31 } = require('./y2nov/q31');
+const { q34 } = require('./y2nov/q34');
+const { q38 } = require('./y2nov/q38');
+const { q41 } = require('./y2nov/q41');
+
 const app = express();
 app.use(express.json());
 
@@ -156,6 +166,17 @@ app.get('/v2/y2/erc12/enr12_6', erc12_6);
 app.get('/v2/y2/erc12/enr12_7', erc12_7);
 app.get('/v2/y2/erc12/enr12_8', erc12_8);
 app.get('/v2/y2/erc12/enr12_9', erc12_9);
+
+// Year 2 Nov
+app.get('/v2/y2/y2nov', y2nov);
+app.get('/v2/y2/y2nov/q20', q20);
+app.get('/v2/y2/y2nov/q24', q24);
+app.get('/v2/y2/y2nov/q29', q29);
+app.get('/v2/y2/y2nov/q30', q30);
+app.get('/v2/y2/y2nov/q31', q31);
+app.get('/v2/y2/y2nov/q34', q34);
+app.get('/v2/y2/y2nov/q38', q38);
+app.get('/v2/y2/y2nov/q41', q41);
 
 // Year 1 Unit 14
 app.get('/v2/y1/unit14', Unit14);

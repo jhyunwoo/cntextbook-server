@@ -22,6 +22,10 @@ const year2Chapter = (req, res) => {
         fileName: 'ERC12',
         title: '영어독해연습 Chapter 12',
       },
+      {
+        fileName: 'y2nov',
+        title: '2022년 고2 11월 학평',
+      },
     ],
   });
 };
